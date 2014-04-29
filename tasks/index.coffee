@@ -33,6 +33,7 @@ digest = Digest opts
   'styles'
   'watch'
   'test'
+  'clean'
 ].forEach (taskName) ->
   task = require("./#{taskName}")(opts, digest)
   gulp.task taskName, (task.after || []), task.run

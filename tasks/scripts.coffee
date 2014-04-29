@@ -16,7 +16,7 @@ projectRoot = "#{__dirname}/../src"
 
 Scripts.makeDefaultBundler = (options, digest, browserifyImpl, onError) ->
   bundler = browserifyImpl({
-    entries: [ './src/bootstrap/index.coffee' ]
+    entries: options.paths.scripts
     extensions: [ '.coffee', '.html' ]
   })
 
@@ -28,7 +28,7 @@ Scripts.makeDefaultBundler = (options, digest, browserifyImpl, onError) ->
       .transform( shortify('~': projectRoot) )
       .bundle(options.browserify)
       .on('error', onError)
-      .pipe(source 'public/bundle.js')
+      .pipe(source options.paths.scriptsOutput)
       .pipe(digest())
       .pipe(gulp.dest '.')
       .pipe(digest.manifest())

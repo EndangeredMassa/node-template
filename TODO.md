@@ -1,5 +1,6 @@
 # TODO
 
+- add Dockerfile
 - client-side sourcemap .map file
 - compile server code to JS first?
 

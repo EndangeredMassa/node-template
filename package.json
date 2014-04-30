@@ -4,7 +4,7 @@
   "description": "Project template for gulp.js",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "coffee src/server/index.coffee",
+    "start": "gulp server",
     "test": "gulp test"
   },
   "keywords": [

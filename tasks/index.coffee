@@ -32,7 +32,10 @@ digest = Digest opts
   'images'
   'styles'
   'watch'
+  'server'
   'test'
+  'test-unit'
+  'test-integration'
   'clean'
 ].forEach (taskName) ->
   task = require("./#{taskName}")(opts, digest)

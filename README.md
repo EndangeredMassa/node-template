@@ -20,6 +20,7 @@ The following primary technologies are used herein.
 - mocha
 - assertive
 - bond
+- testium
 
 **build**
 

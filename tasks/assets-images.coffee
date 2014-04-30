@@ -1,5 +1,3 @@
-'use strict'
-
 gulp = require 'gulp'
 rename = require 'gulp-rename'
 

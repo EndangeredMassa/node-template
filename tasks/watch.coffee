@@ -1,7 +1,7 @@
 gulp = require 'gulp'
 watchify = require 'watchify'
 
-{makeDefaultBundler} = require './scripts'
+{makeDefaultBundler} = require './assets-scripts'
 
 DELAY = 600
 

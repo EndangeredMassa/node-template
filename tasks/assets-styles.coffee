@@ -22,7 +22,7 @@ module.exports = (options, digest) ->
   define =
     url: giftwrapUrl
 
-  after: [ 'images' ]
+  after: [ 'assets-images' ]
   run: ->
     gulp.src(options.paths.styles)
       .pipe(stylus {define})

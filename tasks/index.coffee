@@ -29,8 +29,8 @@ opts.paths =
 digest = Digest opts
 
 [
-  'images'
-  'styles'
+  'assets-images'
+  'assets-styles'
   'watch'
   'server'
   'test'
@@ -41,17 +41,17 @@ digest = Digest opts
   task = require("./#{taskName}")(opts, digest)
   gulp.task taskName, (task.after || []), task.run
 
-scripts = require('./scripts')(opts, digest).run
-gulp.task 'scripts', scripts
+scripts = require('./assets-scripts')(opts, digest).run
+gulp.task 'assets-scripts', scripts
 
 testOptions =
   paths:
     scripts: glob.sync('./test/unit/**/*.coffee')
     scriptsOutput: './test/tmp/unit-bundle.js'
-testScripts = require('./scripts')(testOptions, digest).run
+testScripts = require('./assets-scripts')(testOptions, digest).run
 gulp.task 'test-scripts', testScripts
 
-gulp.task 'assets', [ 'images', 'styles', 'scripts' ]
+gulp.task 'assets', [ 'assets-images', 'assets-styles', 'assets-scripts' ]
 
 module.exports = gulp
 

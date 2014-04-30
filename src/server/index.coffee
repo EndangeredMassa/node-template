@@ -1,16 +1,6 @@
-express = require 'express'
-app = express()
+createServer = require './server'
 
-app.use '/assets', express.static("#{__dirname}/../../public")
-
-app.get '/favicon.ico', (request, response) ->
-  response.end()
-
-app.get '/', (request, response) ->
-  html = require('fs').readFileSync("#{__dirname}/index.html").toString()
-  response.send(html)
-
-server = app.listen 7000, ->
+server = createServer().listen 7000, ->
   port = server.address().port
   console.log "Listening on port: #{port}"
 

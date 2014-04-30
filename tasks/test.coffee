@@ -5,6 +5,6 @@ module.exports = (options) ->
   after: ['test-scripts']
   run: ->
     gulp
-      .src('./test/tmp/unit-bundle.js', {buffer: false})
+      .src('./test/tmp/unit-bundle.js', {read: false})
       .pipe(mocha( reporter: 'spec' ))
 

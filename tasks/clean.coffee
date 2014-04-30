@@ -6,5 +6,6 @@ module.exports = (options, digest) ->
   run: ->
     gulp.src('digest.json', {read: false}).pipe(clean())
     gulp.src('test/tmp', {read: false}).pipe(clean())
+    gulp.src('test/failed_screenshots', {read: false}).pipe(clean())
     gulp.src('public', {read: false}).pipe(clean())
 

@@ -6,6 +6,12 @@ This is a collection of node template projects.
 
 ## single-page application project
 
+Install with:
+
+```
+git clone --depth=1 -b master git@github.com:EndangeredMassa/node-template.git && cd node-template && rm -rf .git
+```
+
 The following primary technologies are used herein.
 
 **code**

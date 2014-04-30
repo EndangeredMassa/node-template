@@ -1,11 +1,7 @@
 # TODO
 
 - client-side sourcemap .map file
-- compile server code first?
-
-- tasks
-  - complete "test" task
-  - individual "test-unit" "test-integration" tasks
+- compile server code to JS first?
 
 - watch
   - live reload browser

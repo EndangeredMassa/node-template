@@ -1,12 +1,8 @@
 # node template projects
 
 This is a collection of node template projects.
-The default projects (master)
-is a setup for a single-page application.
 
-## template projects
-
-- [https://github.com/EndangeredMassa/node-template](master) single-page application
+- [[master](https://github.com/EndangeredMassa/node-template/tree/master)] single-page application
 
 ## single-page application project
 
